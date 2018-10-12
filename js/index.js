@@ -17,42 +17,23 @@ $(function(){
 	});
 });
 
-//jquery写 上下滑动菜单
-//$(function(){
-//			//console.log($(".one").attr("value"));
-//			$(".navhover li").hover(function(){
-//				
-//				let cla=$(this).attr("value");
-//				
-//				$(".cla").slideDown("slow");
-//			});
-//			$(this).mouseout(function(){
-//				let cla=$(this).attr("value");
-//				$(".cla").slideUp("slow");
-//			});
-//			
-//	});	
-		
-		
-		
-		
-		
-		
-		
-		
+
+	
 //var len = $(".navlist .navhover li").length;
 //	for(let m=0; m<len; m++){
 //		let lis = $(".navlist .navhover li");
 //		lis[m].id=m;
 //	}
 
+
+//jquery写 上下滑动菜单
 $(function(){
 
 	$(".navlist .navhover li").mouseover(
 		function(){
 			let n = $(".navlist .navhover li").index(this);
 			$(".navlist .navhover div").eq(n).slideDown("slow");
-			$(".navlist .navhover li").index(this).append($(".navlist .navhover div")).eq(n);
+			//$(".navlist .navhover li").index(this).append($(".navlist .navhover div")).eq(n);
 		});	
 	$(".navlist .navhover li").mouseleave(
 		function(){
@@ -144,8 +125,8 @@ $(function(){
 })
 
 
-$(function(){
-	$(".video").onclick(event){
-		playPause(this)
-	}
-})
+//$(function(){
+//	$(".video").onclick(event){
+//		playPause(this)
+//	}
+//})
