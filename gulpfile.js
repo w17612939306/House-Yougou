@@ -6,7 +6,7 @@ var gulp = require("gulp");//require:相当于<script src="gulp.js"></script>
 //task函数的第一个参数function是任务copyHtml对应的功能
 
 gulp.task("copy-index",function(){
-	gulp.src("index.html")
+	gulp.src("*.html")
 	.pipe(gulp.dest("D:/phpStudy/WWW/Project1"));//此处路径可以使用/或\\
 
 });

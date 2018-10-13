@@ -32,6 +32,7 @@ $(function(){
 //	}
 
 
+
 //jquery写 上下滑动菜单
 $(function(){
 
@@ -82,17 +83,28 @@ $(function(){
 //	}
 //})
 
-//把登录页面引入到headerfooter页面中
-$("#login-body").load("login.html");
+
+////把登录页面引入到headerfooter页面中
+//$("#login-body").load("login.html");
+
 
 //登录方式切换
 $("#zhanghao").click(function(){
 	alert(1);
-	$(".bodd").css({display: "none"});
-	$(".podd").css({display: "block"});
+	$(".bodd").css({display:"none"});
+	$(".podd").css({display:"block"});
 });
 
 //$("#shouji").click(function(){
 //	$(".bodd").css({display: "block"});
 //	$(".podd").css({display: "none"});
 //});
+
+
+
+//	$("#shouji").click(function(){
+//		$("#login-body").load("phone-login.html");
+//	});
+//	$("#zhanghao").click(function(){
+//		$("#login-body").load("account-login.html");
+//	});
