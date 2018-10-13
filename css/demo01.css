@@ -39,10 +39,12 @@
   text-align: center; }
 
 .eapp, .weChat {
+  z-index: 10;
   border: 1px solid black;
   position: absolute;
   top: 40px;
   left: -45px;
+  background-color: white;
   display: none; }
 
 .eapp {
@@ -236,13 +238,11 @@
   color: #333;
   text-align: center; }
 
-.swiper-item-wrap  .swiper-sub-item goods-img a {
-    width: 68px;
-    height: 31px;
-    display: inline-block;
-    margin: 0 52px;
-}
-
+.swiper-item-wrap .swiper-sub-item goods-img a {
+  width: 68px;
+  height: 31px;
+  display: inline-block;
+  margin: 0 52px; }
 
 #command-new-products .swiper-wrap .swiper-container {
   width: 920px;
@@ -255,15 +255,13 @@
   backface-visibility: hidden;
   z-index: 1; }
 
-#command-new-products .swiper-wrap .swiper-item-wrap a{
-display: inline-block; 
-margin:0 12px;
-}
-    
+#command-new-products .swiper-wrap .swiper-item-wrap a {
+  display: inline-block;
+  margin: 0 12px; }
+
 .swiper-wrap .swiper-item-wrap .swiper-sub-item .goods-img a img {
   width: 210px;
   height: 210px; }
-  
 
 #command-new-products .swiper-wrap .arrow-left {
   left: 0;
@@ -297,7 +295,6 @@ margin:0 12px;
 .swiper-item-wrap {
   position: absolute;
   left: 0; }
-
 
 #command-new-products .swiper-wrap .swiper-sub-item:hover {
   background-color: #f6f6f6; }
@@ -371,7 +368,7 @@ margin:0 12px;
 
 .modules_style .modules_center li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 17px;
   position: relative;
   z-index: 10; }
 
@@ -395,6 +392,21 @@ margin:0 12px;
   left: 0;
   top: 0;
   display: none; }
+
+.populor .more-goods {
+  width: 990px;
+  margin: auto; }
+
+.populor .more-goods .goos-item {
+  width: 100%; }
+
+.populor .more-goods .goos-item a {
+  display: inline-block;
+  margin-right: 18px;
+  white-space: nowrap; }
+
+.populor .more-goods .goos-item a:nth-child(4n) {
+  margin-right: 0px; }
 
 /*	footer css部分*/
 .footer {
@@ -529,6 +541,7 @@ margin:0 12px;
 .footer-bottom .fontul {
   margin: 40px 0px 40px 0; }
 
+/*# sourceMappingURL=demo01.css.map */
 /*# sourceMappingURL=demo01.css.map */
 
 /*# sourceMappingURL=demo01.css.map */

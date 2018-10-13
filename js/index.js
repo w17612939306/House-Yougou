@@ -18,7 +18,13 @@ $(function(){
 });
 
 
-	
+//	//动态给每个li设置id  此处未用到
+//	var len=$(".modules_style .brand_trend_information li").length;
+//	for(var m=0;m<len;m++){
+//	var lis=$(".modules_style .brand_trend_information li")
+//	lis[m].id=m;
+//	}
+
 //var len = $(".navlist .navhover li").length;
 //	for(let m=0; m<len; m++){
 //		let lis = $(".navlist .navhover li");
@@ -30,85 +36,30 @@ $(function(){
 $(function(){
 
 	$(".navlist .navhover li").mouseover(
-		function(){
-			let n = $(".navlist .navhover li").index(this);
-			$(".navlist .navhover div").eq(n).slideDown("slow");
-			//$(".navlist .navhover li").index(this).append($(".navlist .navhover div")).eq(n);
-		});	
-	$(".navlist .navhover li").mouseleave(
-		function(){
-			let n = $(".navlist .navhover li").index(this);
-			$(".navlist .navhover div").eq(n).slideUp("slow");
-		});		
+	function(){
+		let n = $(".navlist .navhover li").index(this);
+		$(".navlist .navhover div").eq(n).slideDown("slow");	
+		//($(".navlist .navhover li").eq(n)).append($(".navlist .navhover div").eq(n));
+	});	
+	
+//	$(".navlist .navhover div").mouseover(function(){
+//		$(this).show();
+//	})
+	
+	$(".navlist .navhover li").mouseout(function(){
+		let n = $(".navlist .navhover li").index(this);
+		$(".navlist .navhover div").eq(n).slideUp("slow");
+	});
+	
+//	$(".navlist .navhover div").mouseout(function(){
+//		$(this).hide();
+//	});
 });
 
 
-// nav部分下拉菜单 普通写法待优化		
-//	$(function(){
-//		$(".one").mouseover(function(){
-//			$(".small-1").slideDown("slow");
-//			//$(".one").append($(".small-1"));
-//		});
-//		$(".one").mouseleave(function(){
-//			$(".small-1").slideUp("slow");
-//		});
-//		
-//		$(".two").mouseover(function(){
-//			$(".small-2").slideDown("slow");
-//			//$(".two").append($(".small-2"));
-//		});
-//		$(".two").mouseleave(function(){
-//			$(".small-2").slideUp("slow");
-//		});
-//		
-//		$(".three").mouseover(function(){
-//			$(".small-3").slideDown("slow");
-//			$(".three").append($(".small-3"));
-//		});
-//		$(".three").mouseleave(function(){
-//			$(".small-3").slideUp("slow");
-//		});
-//		
-//		$(".four").mouseover(function(){
-//			$(".small-4").slideDown("slow");
-//			$(".four").append($(".small-4"));
-//		});
-//		$(".four").mouseleave(function(){
-//			$(".small-4").slideUp("slow");
-//		});
-//		
-//		$(".five").mouseover(function(){
-//			$(".small-5").slideDown("slow");
-//			$(".five").append($(".small-5"));
-//		});
-//		$(".five").mouseleave(function(){
-//			$(".small-5").slideUp("slow");
-//		});
-//		
-//		$(".six").mouseover(function(){
-//			$(".small-6").slideDown("slow");
-//			$(".six").append($(".small-6"));
-//		});
-//		$(".six").mouseleave(function(){
-//			$(".small-6").slideUp("slow");
-//		});
-//		
-//		$(".seven").mouseover(function(){
-//			$(".small-7").slideDown("slow");
-//			$(".seven").append($(".small-7"));
-//		});
-//		$(".seven").mouseleave(function(){
-//			$(".small-7").slideUp("slow");
-//		});
-//	});
 
 $(function(){
-//	//动态给每个li设置id  此处未用到
-//	var len=$(".modules_style .brand_trend_information li").length;
-//	for(var m=0;m<len;m++){
-//	var lis=$(".modules_style .brand_trend_information li")
-//	lis[m].id=m;
-//	}
+
 	//hover绑定事件 [in]  [out]
 	$(".modules_style .brand_trend_information li").hover(
 		function(){
@@ -124,9 +75,24 @@ $(function(){
 	);		
 })
 
-
+//视频播放
 //$(function(){
 //	$(".video").onclick(event){
 //		playPause(this)
 //	}
 //})
+
+//把登录页面引入到headerfooter页面中
+$("#login-body").load("login.html");
+
+//登录方式切换
+$("#zhanghao").click(function(){
+	alert(1);
+	$(".bodd").css({display: "none"});
+	$(".podd").css({display: "block"});
+});
+
+//$("#shouji").click(function(){
+//	$(".bodd").css({display: "block"});
+//	$(".podd").css({display: "none"});
+//});

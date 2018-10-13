@@ -39,10 +39,12 @@
   text-align: center; }
 
 .eapp, .weChat {
+   z-index: 10;
   border: 1px solid black;
   position: absolute;
   top: 40px;
   left: -45px;
+  background-color: white;
   display: none; }
 
 .eapp {
@@ -371,7 +373,7 @@ margin:0 12px;
 
 .modules_style .modules_center li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right:17px;
   position: relative;
   z-index: 10; }
 
@@ -395,6 +397,31 @@ margin:0 12px;
   left: 0;
   top: 0;
   display: none; }
+
+.populor .more-goods{
+    width:990px;
+    margin: auto; 
+}
+
+.populor .more-goods .goos-item{
+    width:100%;
+  
+}
+
+.populor .more-goods .goos-item a{
+    display: inline-block;
+    margin-right:18px ;
+    white-space: nowrap;
+}
+.populor .more-goods .goos-item a:nth-child(4n){
+    
+    margin-right:0px ;
+}
+
+
+
+
+
 
 /*	footer css部分*/
 .footer {
