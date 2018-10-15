@@ -18,3 +18,5 @@ $(function(){
 	$("#regist-footer").load("footer.html");
 	$(".nav").remove();
 });
+
+

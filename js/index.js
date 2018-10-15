@@ -1,7 +1,7 @@
 //轮播图插件
 $(function(){
 	let imgs = ["img/slider1.jpg","img/slider2.jpg","img/slider3.jpg","img/slider4.jpg","img/slider5.jpg","img/slider3.jpg"];
-	let s1 = new Slider($("#slider"),1349,550,imgs,40,6,"#ccc","red",true,-1,3000);
+	let s1 = new Slider($("#slider"),1210,550,imgs,40,6,"#ccc","red",true,-1,3000);
 	
 });
 
@@ -33,34 +33,32 @@ $(function(){
 
 
 
-//jquery写 上下滑动菜单
+//jquery写 上下滑动菜单(未完成)
 $(function(){
 
-	$(".navlist .navhover li").mouseover(
-	function(){
+	$(".navlist .navhover li").mouseenter(function(){
 		let n = $(".navlist .navhover li").index(this);
-		$(".navlist .navhover div").eq(n).slideDown("slow");	
-		//($(".navlist .navhover li").eq(n)).append($(".navlist .navhover div").eq(n));
+		$(".navlist .navhover div").eq(n).show();	
 	});	
 	
-//	$(".navlist .navhover div").mouseover(function(){
-//		$(this).show();
-//	})
-	
-	$(".navlist .navhover li").mouseout(function(){
+	$(".navlist .navhover li").mouseleave(function(){
 		let n = $(".navlist .navhover li").index(this);
-		$(".navlist .navhover div").eq(n).slideUp("slow");
+		$(".navlist .navhover div").eq(n).hide();	
+	});	
+	
+	$(".navlist .navhover div").mouseenter(function(){
+		$(this).show();
 	});
 	
-//	$(".navlist .navhover div").mouseout(function(){
-//		$(this).hide();
-//	});
+	$(".navlist .navhover div").mouseleave(function(){
+		$(this).hide();
+	});	
+		
 });
 
 
-
+//遮罩层
 $(function(){
-
 	//hover绑定事件 [in]  [out]
 	$(".modules_style .brand_trend_information li").hover(
 		function(){
@@ -74,7 +72,7 @@ $(function(){
 			$(".modules_style .brand_trend_information li p").eq(n).css({display:"none"});
 		}
 	);		
-})
+});
 
 //视频播放
 //$(function(){
@@ -89,11 +87,11 @@ $(function(){
 
 
 //登录方式切换
-$("#zhanghao").click(function(){
-	alert(1);
-	$(".bodd").css({display:"none"});
-	$(".podd").css({display:"block"});
-});
+//$("#zhanghao").click(function(){
+//	alert(1);
+//	$(".bodd").css({display:"none"});
+//	$(".podd").css({display:"block"});
+//});
 
 //$("#shouji").click(function(){
 //	$(".bodd").css({display: "block"});
