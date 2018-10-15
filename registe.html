@@ -31,13 +31,15 @@
 					<div id="phoneform">
 						<div class="user Pass ">
 							<p class="icon-top">手机号</p>
-							<input type="text" placeholder="请输入您的手机号"/>
-						</div><span></span>
+							<input type="text" name="username" id="usernameId"  placeholder="请输入您的手机号"/>
+							<span id="userNameSpan"></span><br/>
+						</div>
 						<div class="moNub">
 							<ul>	
 								<li class="word Pass mobilems">
 									<p class="icon-bot">验证码</p>
-									<input type="text"/>	
+									<input type="text"/>
+									<span id="code-Span"></span><br/>
 								</li>
 								<li class="Ptwo">
 									<p>图片验证码？</p>	
@@ -49,7 +51,8 @@
 							<ul>	
 								<li class="word Pass mobilems">
 									<p class="icon-bot">验证码</p>
-									<input type="text"/>	
+									<input type="text"/>
+									<span id="phoncode-Span"></span><br/>
 								</li>
 								<li class="Ptwo">
 									<span>获取验证码</span>	
@@ -58,8 +61,9 @@
 						</div>
 						<div class="user Pass ">
 							<p class="icon-top">密码</p>
-							<input type="text" placeholder="字母、数字、符号均可，6-25个字符以内"/>
-						</div><span></span>
+							<input type="text" name="userpass" id="userpassId" placeholder="字母、数字、符号均可，6-25个字符以内"/>
+							<span id="userPassSpan"></span><br/>
+						</div>
 						
 						<div class="user Pass ">
 							<p class="icon-top">确认密码</p>
@@ -83,4 +87,4 @@
 	</body>
 </html>
 <script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
-<script type="text/javascript" src="js/headerfoot.js" ></script>
+<script type="text/javascript" src="js/regist-headerfoot.js" ></script>
