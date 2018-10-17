@@ -1,0 +1,65 @@
+@charset "utf-8";
+//商品信息以上的部分
+.detailsBox{
+        width:100;
+    .goods-datails{
+       width:1210px;
+       margin:0 auto;
+       height:550px;
+       background:blue; 
+       .goods-datails-progress{
+           width:100%;
+           height:50px;
+           background:pink;
+           a{
+               
+           }
+       }
+       .goods-Imgs{
+           position: relative;
+           width:600px;
+           height:500px;
+           background: darkgoldenrod;
+           float: left; 
+            .sourceImg{
+              width:480px;
+              height:480px;
+              float: right;
+            }
+            .showBox{
+                position:absolute;
+            }
+            .smallImgBox{
+                float: left;
+                margin:8px 25px;
+                ul li{
+                    margin: 5px 0;
+                    border:1px solid #ddd;
+                    .jiantou{
+                        width:0;
+                        height:0;
+                        border: 10px solid black;
+                        border-color: transparent transparent transparent black;
+                        position:absolute;
+                        left:85px;
+                        top:34px;
+                        z-index: 100;
+                    }
+                }
+            } 
+       }
+       .goods-shoping{
+          width:600px;
+          height:500px;
+          background: green; 
+          float: right;
+       }
+    }  
+}
+//商品信息部分
+.goodsinformation{
+    width:1210px;
+    height:400px;
+    margin: 0 auto;
+    background: yellow;
+}

@@ -30,16 +30,13 @@
         width: 100%;
         overflow: hidden;
         white-space: nowrap; }
-        .intr-box ul li .box-name span {
+        .intr-box ul li .box-name a {
           float: left; }
         .intr-box ul li .box-name p {
           display: inline-block;
-          float: left;
-          margin-left: 10px; }
+          float: left; }
           .intr-box ul li .box-name p span {
-            float: left;
-            font-size: 15px;
-            margin-left: 10px; }
+            margin-left: 15px; }
           .intr-box ul li .box-name p .old-price {
             font-size: 10px;
             text-decoration: line-through; }

@@ -80,7 +80,7 @@
 
 
 #loginform,#phoneform{
-	width:302px;
+	width:320px;
 	margin:30px auto 30px;
 }
 
@@ -90,7 +90,7 @@
 }
 
 #phoneform .mobilems input{
-	width:160px;
+	width:186px;
 	float: right;
 }
 .moNub{
@@ -102,7 +102,7 @@
 }
 
 #phoneform ul{
-	width:300px;
+	width:320px;
 	padding:0;
 	overflow: hidden;
 } 
@@ -128,8 +128,7 @@
 
 
 .login-box .Pass{
-	/*width:300px;*/
-	height:35px;
+	height:36px;
 	margin:30px auto;
 	border: 1px solid #000;
 }
@@ -142,9 +141,11 @@
 }
 
 .Pass p{
-	line-height: 30px;
-	padding-left:8px;
+	line-height: 35px;
+	padding:0 10px;
 	margin:auto;
+	font-size:14px;
+	
 }
 .Pass .icon-top{
 	background-position:-165px -30px;
@@ -153,27 +154,31 @@
 .Pass .icon-bot{
 	background-position:-165px -60px;
 	float: left;
+}
+#userNameSpan{
+	display: inline-block;
+	width:315px;
 	
 }
 
 .login-box .Pass input{
-	width:235px;
-	height:35px;
-	margin: auto;
+	width:242px;
+	height:36px;
 	float:right;
-	/*border: 1px solid red;*/
 	border-left: none;
 	border:0;
 }
-
-.submit{
+#message{
+	display:inline-block;
+	width:315px;
+}
+#submit{
 	text-align: center;
-	margin:0 auto; 
+	margin:0 10px; 
 	width:300px;
 	height:35px;
 	font-size: 18px;
 	line-height: 35px;
-	margin: auto;
 	background: black;
 	color:white;
 }

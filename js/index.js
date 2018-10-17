@@ -17,6 +17,21 @@ $(function(){
 	});
 });
 
+//监听滚动条的高度   $(window).scrollTop()=200
+$(function(){
+	$(window).bind("scroll",function(){
+		//console.log($(window).scrollTop());
+		if($(window).scrollTop()>=200){
+			$(".navlist").css({position:"fixed",top:0,zIndex:1000,borderBottom:"5px solid black"})
+		}
+		if($(window).scrollTop()<=200){
+			$(".navlist").css({position:"relative",marginLeft:"0px"})
+		}
+	});
+});
+
+
+
 
 //	//动态给每个li设置id  此处未用到
 //	var len=$(".modules_style .brand_trend_information li").length;

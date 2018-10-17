@@ -120,16 +120,18 @@
   margin: 0 auto; }
 
 .navtitle .navlist {
+  background: white;
   position: relative;
   display: flex;
   width: 1210px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 10px 0 0; }
 
 .small {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 35px;
+  top: 75px;
   border-top: 1px solid gray;
   background: white;
   z-index: 100;
@@ -184,7 +186,7 @@
   width: 80%;
   height: 25px;
   border-bottom: 1px solid #333;
-  /*margin-top: 20px;*/ }
+  margin-top: 20px; }
 
 .search .searinpt {
   width: 90%;

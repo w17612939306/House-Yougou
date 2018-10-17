@@ -37,17 +37,14 @@
                width:100%;
                overflow: hidden;
                white-space: nowrap;
-                span{
+                a{
                     float: left;
                 }
                 p{
                     display: inline-block;
                     float: left;
-                    margin-left:10px;
                     span{ 
-                        float:left;  
-                        font-size: 15px;
-                        margin-left: 10px;
+                        margin-left: 15px;
                     }
                     .old-price{
                          font-size: 10px;

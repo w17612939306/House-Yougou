@@ -1,4 +1,3 @@
-
 //registe.html调用
 $(function(){
 	$("#regist-header").load("header.html");
